@@ -1,0 +1,192 @@
+/* Q1: Reset margins for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Q2: Ensure all HTML5 semantic elements are block level */
+header, nav, section, article, aside, footer, main, figure, figcaption {
+    display: block;
+}
+
+/* Q3: Body styling */
+body {
+    color: #222;
+    background: url("../assets/images/dark-wood2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Q4: Main container */
+.container {
+    width: 960px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Q5: Content section */
+.content {
+    line-height: 1.6em;
+    padding: 15px;
+}
+
+/* Q6: Header, Nav, Footer shared styling */
+header, nav, footer {
+    background-color: #111;
+    color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Q7: Unordered list inside nav */
+nav ul {
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Q8: List items inside nav (horizontal menu) */
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+    text-transform: uppercase;
+}
+
+/* Q9: Anchor pseudo classes for navigation */
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Q10: General anchor styling */
+a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+/* Q11: Headings styling */
+h1, h2, h3 {
+    margin: 15px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+/* Q12: Centering images with class img-centre */
+.img-centre {
+    display: block;
+    margin: 10px auto;
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Q13: Audio and Video elements */
+audio, video {
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Q14: Tables */
+table {
+    width: 90%;
+    margin: 15px auto;
+    border-collapse: collapse;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Q15: Table cells */
+td, th {
+    border: 1px solid #444;
+    padding: 8px 10px;
+    background-color: #fafafa;
+}
+
+/* Q16: Table headers and tfoot cells */
+th, tfoot td {
+    text-transform: uppercase;
+    background-color: #222;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+/* Q17: Description term styling */
+dt {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Q18: Footer styling */
+footer {
+    font-size: 85%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #333;
+}
+
+/* Q19: iFrame styling */
+iframe {
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Q20: Fieldset styling */
+fieldset {
+    width: 520px;
+    margin: 25px auto;
+    border: 1px solid #555;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Q21: Legend styling */
+legend {
+    font-style: italic;
+    background-color: #333;
+    color: #fff;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Q22: Submit button styling */
+input[type="submit"] {
+    border: none;
+    padding: 8px 15px;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Q23: Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #ffcc00;
+    color: #000;
+    transform: scale(1.05);
+}
